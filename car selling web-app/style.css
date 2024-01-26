@@ -1,0 +1,244 @@
+/* Reset some default styles */
+body, h1, h2, h3, p, a {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Lato', sans-serif; /* Applying the Google Font 'Lato' */
+}
+
+h1 span{
+	color: orange;
+}
+
+ h2 img{
+    font-size: 2rem;
+            width: 120px; /* Set the desired width for the car icon */
+           
+            margin-top:0px;/* Adjust the spacing between text and icon */
+        }
+
+       h1{
+            position: absolute;
+            top: 30%;
+            left: 50%;
+            font-size: 3.5rem;
+            transform: translate(-50%, -50%);
+            color:white;
+            text-align: center;
+           font-family: 'Rubik Doodle Shadow', system-ui;
+            z-index: 1; /* Ensure text is above the image */
+        }
+
+span {
+    color: #ffcc00;
+    font-weight: bolder;
+}
+
+html{
+    font-size: 62.5%;
+    overflow: hidden;
+    scroll-padding-top: 7rem;
+    scroll-behavior: smoth;
+}
+
+h2 {
+    text-decoration: none;
+    display: inline-block;
+    font-size: 24px; /* Adjust font size as needed */
+    color: rgb(0, 0, 0); /* Light yellow color for "max" */
+    font-weight: bolder;
+    font-size: 250%;
+}
+
+#login-btn {
+    display: flex;
+    align-items: center;
+}
+
+.btn {
+    padding: 10px 15px;
+    font-size: 16px;
+    background-color: rgb(255, 204, 0); /* Set your desired button background color */
+    color: rgb(0, 0, 0); /* Set your desired button text color */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 0%;
+    margin-left: 1500px; /* Adjust spacing between button and icon */
+}
+
+.btn1 {
+    padding: 10px 15px;
+    font-size: 16px;
+    background-color: rgb(255, 204, 0);
+    color: rgb(0, 0, 0);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 0%;
+    text-decoration: none;
+    width: 19rem; 
+  
+}
+
+
+
+
+
+
+
+
+.buttons {
+    margin-top: 10px; /* Adjust the top margin for the buttons */
+}
+
+/* Add more styles as needed */
+
+
+.btn,.btn1:hover {
+    background-color: yellow; /* Set your desired button background color on hover */
+}
+
+.far.fa-user {
+    font-size: 20px; /* Set your desired font size for the user icon */
+    margin-left: 5px; /* Adjust spacing between button and icon */
+    color: #3498db; /* Set your desired color for the user icon */
+}
+
+/* Navbar styling */
+.navbar {
+    padding: 15px;
+    text-align: center;
+       background-color: black;
+}
+
+.navbar a {
+    color: rgb(255, 255, 255); /* Set your desired text color */
+    margin: 0 15px; /* Adjust spacing between links */
+    font-size: 16px; /* Set your desired font size */
+    text-decoration: none;
+ 
+    transition: color 0.3s ease; /* Smooth transition for text color */
+}
+
+.navbar a:hover {
+    color: #ffcc00; /* Set your desired text color on hover */
+}
+
+.logo {
+    color: #fff; /* Set your desired color for the logo */
+    font-size: 24px; /* Set your desired font size for the logo */
+    text-decoration: none;
+    display: inline-block;
+    margin-right: 20px; /* Adjust spacing between logo and links */
+}
+
+.logo span {
+    font-weight: bold;
+}
+.login-form-container{
+	position: fixed;
+	top: -150; left: 0;
+	z-index: 1000;
+	height: 100%;
+	width: 100%;
+	background:rgba(255, 255, 255, 0.8);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+    opacity: 1;
+}
+
+.login-form-container .login-form-container.active{
+    top: 0;
+    opacity: 1;
+}
+.login-form-container.active{
+top:0;
+opacity: 1;
+
+}
+.login-form-container form{
+    padding: 6rem;
+    margin: 2rem;
+  
+    border-radius: 30px;
+    box-shadow: var(--box-shadow);
+    background: #fff;
+    border: var(--border);
+    text-align: center;
+    width: 30rem;
+}
+
+.login-form-container form.buttons{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.login-form-container form.buttons .btn1{
+    display: block;
+    width: 100%;
+    margin: 5rem 0;
+
+}
+
+.login-form-container form h3{
+    color: var(--black);
+    font-size: 2rem;
+    padding-bottom: 1rem;
+    text-transform: uppercase;
+}    
+
+
+.login-form-container form .box {
+   padding: 3px;
+    margin: 7px;
+    font-size: 20px;
+    width: 100%;
+  border-color:thistle;
+    color:black;
+   
+    text-align: center;
+    
+   
+    /* Set a width to the input fields */
+}
+
+
+.login-form-container form p a{
+    color: #ffcc00;
+    text-decoration: line;
+    font-size: 1.5rem;
+}
+
+.login-form-container form p {
+   
+   
+    font-size: 1.5rem;
+}
+
+
+
+.login-form-container #close-login-form {
+    position: absolute;
+    top: 1.5rem; 
+    right: 2.5rem;
+    font-size: 3rem;
+    color:var(--black);
+    cursor: pointer;
+}
+/* <!-- media quries --> */
+@media(max-width:991px){
+    html{
+        font-size: 55%;
+    }
+}
+
+@media(max-width:450px){
+    html{
+        font-size: 50%;
+    }
+}
+
